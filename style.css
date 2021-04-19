@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5df4d;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  overflow: hidden;
+}
+
+.title {
+  color: rgb(255, 242, 242);
+  text-align: center;
+  margin: 30px;
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+  margin-top: 220px;
+}
+
+.yellow,
+.gray {
+  background-color: white;
+  margin: 30px;
+  min-width: 200px;
+  height: 300px;
+  box-shadow: 19px 23px 6px 1px rgb(95, 95, 95);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.yellow-in {
+  background: #f5df4d;
+  margin: 12px;
+  height: 167px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.gray-in {
+  background-color: #939597;
+  margin: 12px;
+  height: 167px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.yellowText {
+  font-size: 20px;
+  color: #f5dc3b;
+  padding: 10px;
+}
+
+.grayText {
+  font-size: 20px;
+  color: #939597;
+  padding: 15px;
+  line-height: 30px;
+  margin-top: -10px;
+}
+
+.gray:hover {
+  transform: scale(1.2);
+}
+
+.yellow:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 570px) {
+  body {
+    overflow: scroll;
+    margin-bottom: 50px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .yellow,
+  .gray {
+    margin-top: 50px;
+    width: 150px;
+  }
+}
